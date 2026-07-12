@@ -42,7 +42,7 @@ The Net Income highlights the final cash return available for equity holders aft
 ![Net Income Scenario Comparison](images/net_income_scenarios.png)
 
 
-### 🏦 5. Debt & Credit Liquidity Schedule
+### 5. Debt & Credit Liquidity Schedule
 This schedule represents the most sophisticated financial engineering element of the model, mapping out capital structure sustainability and liquidity runway.
 
 * **Mandatory Amortization:** The company is burdened by a fixed, mandatory Senior Secured Term Debt repayment of **$25.0M every single year**, steadily reducing the term loan balance from $200M to $75M over the horizon.
