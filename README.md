@@ -13,7 +13,7 @@ This section establishes the operational core and macroeconomic drivers of the m
 * Volume Constraints:** Sales volume growth is modeled at 5.0% for 2023 and 4.0% thereafter. Crucially, the model incorporates an absolute production capacity wall at **420,000 units/year**, which forces unconstrained growth to cap out and hit 100% capacity utilization by 2027 under the Base Case.
 * Cost Structures:** Variable inputs (Raw Materials at $226/unit and Utilities at $66.2/unit) and fixed overheads ($69.0M total in 2023) scale annually based on scenario-specific inflation rates.
 
-![Scenario Assumptions Control](images/votre_capture_des_hypotheses.png)
+![Scenario Assumptions Control](images/Assumptions.png)
 
 
 ### 2. Income Statement Analysis
@@ -22,7 +22,7 @@ The Income Statement tracks the top-line performance and structural profitabilit
 * **The 2024 Margin Squeeze:** Under the Base Case, a sharp cyclical dip in gross sales price to **$725/unit** (down from $800 in 2023) drives a revenue contraction to $233.6M. Consequently, EBITDA collapses by 36.2% down to **$47.1M**, compressing EBITDA margins from 29.3% to a low of **20.2%**.
 * **Profitability Recovery:** Performance peaks in 2025 when pricing rebounds to $825/unit, lifting EBITDA to **$86.5M** (30.7% margin) before capacity constraints flatten the upside in 2027.
 
-![EBITDA Scenario Comparison](images/ebitda_scenarios.png)
+![EBITDA Scenario Comparison](images/EBITDA.png)
 
 
 ### 3. Balance Sheet & Capital Structure
@@ -31,7 +31,7 @@ The Balance Sheet demonstrates full structural integrity, with an integrated mac
 * **Capital Structure Evolution:** By isolating permanent funding sources (Term Debt, Revolver, and Equity), the chart below highlights the firm's organic deleveraging profile in the Base Case. The annual $25.0M mandatory amortization steadily reduces the Senior Debt wall, while retained earnings steadily expand the equity base.
 * **Tax Timing Differences:** Rather than applying a flat tax rate, the model accounts for a permanent **$5.0M annual structural reduction** from accounting EBT to government taxable EBT, accurately tracking the accumulation of Deferred Income Tax Liabilities.
 
-![Capital Structure Base Case](images/capital_structure.png)
+![Capital Structure Base Case](images/Capital_structure.png)
 
 
 ### 4. Net Income Performance
@@ -39,7 +39,7 @@ The Net Income highlights the final cash return available for equity holders aft
 
 * **Scenario Divergence:** The chart illustrates the massive impact of operating leverage. In the Worst Case, persistent inflation and a 14% margin drop crush Net Income to $5.0M by 2027, whereas the Best Case captures the full upside of higher pricing with no added interest burdens.
 
-![Net Income Scenario Comparison](images/net_income_scenarios.png)
+![Net Income Scenario Comparison](images/Net_income.png)
 
 
 ### 5. Debt & Credit Liquidity Schedule
@@ -47,8 +47,6 @@ This schedule represents the most sophisticated financial engineering element of
 
 * **Mandatory Amortization:** The company is burdened by a fixed, mandatory Senior Secured Term Debt repayment of **$25.0M every single year**, steadily reducing the term loan balance from $200M to $75M over the horizon.
 * **The Revolver Mechanism:** To handle the 2024 cash crunch caused by lower EBITDA and fixed debt payments, the model deploys an automated **Bank Revolving Credit Facility (6.0% interest)**. The Revolver peaks at a **$7.7M drawdown in 2024** to fund the cash shortfall, before an automated *cash sweep* uses 2025's excess cash flows to pay the facility back down to $1.2M.
-
-![Revolver Credit Utilization](images/revolver_scenarios.png)
 
 
 ### 6. Scenario Analysis Insights
