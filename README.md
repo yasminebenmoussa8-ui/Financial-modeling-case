@@ -1,8 +1,7 @@
-# Three-Statement Financial Model & Scenario Analysis: Blu Containers
+# Integrated Three-Statement Financial Model | Blu Containers
 
-An advanced, dynamic 3-statement financial forecasting model built to analyze the debt sustainability, liquidity constraints, and operational scaling of **Blu Containers Company** over a 5-year projection horizon (2023–2027). 
-
-This model features fully integrated financial statements, automated credit facilities, and a macro-driven scenario engine designed for strategic decision-making and credit analysis.
+This project consists of a fully integrated three-statement financial model developed in Microsoft Excel to forecast the financial performance of Blu Containers over a five-year horizon (2023–2027). 
+The model integrates the Income Statement, Balance Sheet, Cash Flow Statement, and supporting schedules while incorporating scenario analysis to assess profitability, liquidity, and capital structure under different operating environments.
 
 ---
 
@@ -40,7 +39,7 @@ The Balance Sheet demonstrates full structural integrity, with an integrated mac
 ### 4. Net Income Performance
 The Net Income highlights the final cash return available for equity holders after adjusting for interest and taxes across all economic cycles.
 
-* **Scenario Divergence:** The chart illustrates the massive impact of operating leverage. In the Worst Case, persistent inflation and a 14% margin drop crush Net Income to $5.0M by 2027, whereas the Best Case captures the full upside of higher pricing with no added interest burdens.
+* **Scenario Divergence:** The chart illustrates the massive impact of operating leverage. In the Worst Case, persistent inflation and a 14% margin drop crush Net Income to $5M by 2027, whereas the Best Case captures the full upside of higher pricing with no added interest burdens.
 
 ![Net Income Scenario Comparison](images/Net_income.png)
 
@@ -58,3 +57,23 @@ While the **Base Case** highlights a temporary $7.7M liquidity crunch in 2024, t
 * **Worst Case (-4% Pricing & High Inflation):** Severe margin compression occurs. Profitability drops, forcing a continuous reliance on the Revolving Credit Facility to sustain the mandatory $25M annual debt service.
 
 *To explore these outcomes dynamically, users can simply open the file and toggle the **Scenario Switch** on the model sheet.*
+
+## Skills Demonstrated
+
+• Three-Statement Financial Modelling
+
+• Financial Forecasting
+
+• Scenario Analysis
+
+• Working Capital Forecasting
+
+• Debt & Revolver Modelling
+
+• Liquidity Analysis
+
+• Capital Structure Analysis
+
+• Financial Statement Integration
+
+• Microsoft Excel
