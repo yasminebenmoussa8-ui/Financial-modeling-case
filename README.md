@@ -22,8 +22,11 @@ The Income Statement tracks the top-line performance and structural profitabilit
 * **The 2024 Margin Squeeze:** Under the Base Case, a sharp cyclical dip in gross sales price to **$725/unit** (down from $800 in 2023) drives a revenue contraction to $233.6M. Consequently, EBITDA collapses by 36.2% down to **$47.1M**, compressing EBITDA margins from 29.3% to a low of **20.2%**.
 * **Profitability Recovery:** Performance peaks in 2025 when pricing rebounds to $825/unit, lifting EBITDA to **$86.5M** (30.7% margin) before capacity constraints flatten the upside in 2027.
 
+![EBITDA Scenario Comparison](images/Net_revenue.png)
+
 ![EBITDA Scenario Comparison](images/EBITDA.png)
 
+![EBITDA Scenario Comparison](images/EBITDA_Margin.png)
 
 ### 3. Balance Sheet & Capital Structure
 The Balance Sheet demonstrates full structural integrity, with an integrated macro control check ensuring assets perfectly equal liabilities and equity (`Check = 0.000`) across all projection years and scenario toggles.
