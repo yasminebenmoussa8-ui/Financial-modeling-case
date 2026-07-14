@@ -1,25 +1,41 @@
-# Integrated Three-Statement Financial Model | Blu Containers
+# Integrated Three-Statement Financial Model | Blu Containers' case
 
-This project consists of a fully integrated three-statement financial model developed in Microsoft Excel to forecast the financial performance of Blu Containers over a five-year horizon (2023–2027). 
-The model integrates the Income Statement, Balance Sheet, Cash Flow Statement, and supporting schedules while incorporating scenario analysis to assess profitability, liquidity, and capital structure under different operating environments.
+This project consists of a fully integrated three-statement financial model developed in Microsoft Excel to forecast Blu Containers' financial performance over a five-year horizon (2023–2027).
 
+The model links the Income Statement, Balance Sheet, Cash Flow Statement, and supporting schedules through dynamic formulas and incorporates scenario analysis, debt modelling, and liquidity forecasting to evaluate the impact of different operating assumptions on financial performance.
+## Model Features
+
+- Fully integrated Income Statement, Balance Sheet and Cash Flow Statement
+- Dynamic scenario switch (Base / Best / Worst Case)
+- Automated debt schedule with revolving credit facility
+- Working capital forecasting
+- Capacity-constrained production modelling
+- Integrated tax schedule
+- Five-year financial projections
 ---
 
 ## Project Architecture
 ### 1. Assumptions & Scenario Controls
 This section establishes the operational core and macroeconomic drivers of the model. It features a centralized scenario switch that dynamically alternates variables across three cases: **Base Case** (Research Forecast), **Best Case** (+4% Pricing / High Growth), and **Worst Case** (-4% Pricing / High Inflation). 
 
-* Volume Constraints:** Sales volume growth is modeled at 5.0% for 2023 and 4.0% thereafter. Crucially, the model incorporates an absolute production capacity wall at **420,000 units/year**, which forces unconstrained growth to cap out and hit 100% capacity utilization by 2027 under the Base Case.
-* Cost Structures:** Variable inputs (Raw Materials at $226/unit and Utilities at $66.2/unit) and fixed overheads ($69.0M total in 2023) scale annually based on scenario-specific inflation rates.
+* Volume Constraints: Sales volume growth is modeled at 5.0% for 2023 and 4.0% thereafter. Crucially, the model incorporates an absolute production capacity wall at **420,000 units/year**, which forces unconstrained growth to cap out and hit 100% capacity utilization by 2027 under the Base Case.
+* Cost Structures: Variable inputs (Raw Materials at $226/unit and Utilities at $66.2/unit) and fixed overheads ($69.0M total in 2023) scale annually based on scenario-specific inflation rates.
 
 ![Scenario Assumptions Control](images/Assumptions.png)
 
 
 ### 2. Income Statement Analysis
-The Income Statement tracks the top-line performance and structural profitability of Blu Containers. It highlights how vulnerable the company's margins are to pricing cycles, even when sales volumes are rising.
+The Income Statement forecasts revenue, operating expenses, EBITDA, EBIT and Net Income over the five-year projection period based on the selected operating scenario.
 
-* **The 2024 Margin Squeeze:** Under the Base Case, a sharp cyclical dip in gross sales price to **$725/unit** (down from $800 in 2023) drives a revenue contraction to $233.6M. Consequently, EBITDA collapses by 36.2% down to **$47.1M**, compressing EBITDA margins from 29.3% to a low of **20.2%**.
-* **Profitability Recovery:** Performance peaks in 2025 when pricing rebounds to $825/unit, lifting EBITDA to **$86.5M** (30.7% margin) before capacity constraints flatten the upside in 2027.
+The model links pricing assumptions, production volumes, capacity constraints and operating costs to evaluate their impact on profitability and margin evolution. It also captures the sensitivity of earnings under different macroeconomic environments.
+
+Key outputs include:
+- Revenue forecast
+- EBITDA and EBITDA margin
+- EBIT
+- Net Income
+
+Under the Base Case, lower selling prices in 2024 reduce EBITDA and temporarily compress operating margins before profitability recovers as pricing improves.
 
 ![EBITDA Scenario Comparison](images/Net_revenue.png)
 
@@ -28,16 +44,14 @@ The Income Statement tracks the top-line performance and structural profitabilit
 ![EBITDA Scenario Comparison](images/EBITDA_Margin.png)
 
 ### 3. Balance Sheet & Capital Structure
-The Balance Sheet demonstrates full structural integrity, with an integrated macro control check ensuring assets perfectly equal liabilities and equity (`Check = 0.000`) across all projection years and scenario toggles.
+The Balance Sheet is fully integrated with the Income Statement and Cash Flow Statement, ensuring that Assets equal Liabilities and Shareholders' Equity throughout the forecast period.
 
-* **Capital Structure Evolution:** By isolating permanent funding sources (Term Debt, Revolver, and Equity), the chart below highlights the firm's organic deleveraging profile in the Base Case. The annual $25.0M mandatory amortization steadily reduces the Senior Debt wall, while retained earnings steadily expand the equity base.
-* **Tax Timing Differences:** Rather than applying a flat tax rate, the model accounts for a permanent **$5.0M annual structural reduction** from accounting EBT to government taxable EBT, accurately tracking the accumulation of Deferred Income Tax Liabilities.
+The model projects working capital, fixed assets, debt balances, deferred taxes, and shareholders' equity while automatically reflecting the impact of operational performance and financing decisions.
 
 ![Capital Structure Base Case](images/Capital_structure.png)
 
 
 ### 4. Net Income Performance
-The Net Income highlights the final cash return available for equity holders after adjusting for interest and taxes across all economic cycles.
 
 * **Scenario Divergence:** The chart illustrates the massive impact of operating leverage. In the Worst Case, persistent inflation and a 14% margin drop crush Net Income to $5M by 2027, whereas the Best Case captures the full upside of higher pricing with no added interest burdens.
 
@@ -45,13 +59,21 @@ The Net Income highlights the final cash return available for equity holders aft
 
 
 ### 5. Debt & Credit Liquidity Schedule
-This schedule represents the most sophisticated financial engineering element of the model, mapping out capital structure sustainability and liquidity runway.
+The debt schedule models the company's financing structure over the projection horizon through an integrated term loan and revolving credit facility.
 
-* **Mandatory Amortization:** The company is burdened by a fixed, mandatory Senior Secured Term Debt repayment of **$25.0M every single year**, steadily reducing the term loan balance from $200M to $75M over the horizon.
-* **The Revolver Mechanism:** To handle the 2024 cash crunch caused by lower EBITDA and fixed debt payments, the model deploys an automated **Bank Revolving Credit Facility (6.0% interest)**. The Revolver peaks at a **$7.7M drawdown in 2024** to fund the cash shortfall, before an automated *cash sweep* uses 2025's excess cash flows to pay the facility back down to $1.2M.
+The schedule automatically calculates:
+
+- Mandatory debt amortization
+- Revolving credit facility drawdowns and repayments
+- Interest expense
+- Cash sweep mechanics
+- Ending cash balances
 
 
 ### 6. Scenario Analysis Insights
+The scenario engine allows users to instantly compare the financial impact of three operating environments by changing a single scenario selector.
+
+The analysis demonstrates how variations in pricing, inflation, and operating assumptions affect profitability, liquidity, leverage, and cash generation.
 While the **Base Case** highlights a temporary $7.7M liquidity crunch in 2024, the model proves resilient across other environments:
 * **Best Case (+4% Pricing):** Stronger pricing eliminates the need for any major Revolver drawdown, allowing the company to build a substantial cash buffer by 2027.
 * **Worst Case (-4% Pricing & High Inflation):** Severe margin compression occurs. Profitability drops, forcing a continuous reliance on the Revolving Credit Facility to sustain the mandatory $25M annual debt service.
@@ -60,20 +82,20 @@ While the **Base Case** highlights a temporary $7.7M liquidity crunch in 2024, t
 
 ## Skills Demonstrated
 
-• Three-Statement Financial Modelling
+• Three-Statement financial modelling
 
-• Financial Forecasting
+• Financial forecasting
 
-• Scenario Analysis
+• Scenario analysis
 
-• Working Capital Forecasting
+• Working capital forecasting
 
-• Debt & Revolver Modelling
+• Debt & Revolver modelling
 
-• Liquidity Analysis
+• Liquidity analysis
 
-• Capital Structure Analysis
+• Capital Structure analysis
 
-• Financial Statement Integration
+• Financial Statement integration
 
 • Microsoft Excel
