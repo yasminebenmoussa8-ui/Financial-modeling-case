@@ -1,4 +1,4 @@
-# Integrated Three-Statement Financial Model | Blu Containers' case
+# Integrated Three-Statement Financial Model | Blu Containers
 
 This project consists of a fully integrated three-statement financial model developed in Microsoft Excel to forecast Blu Containers' financial performance over a five-year horizon (2023–2027).
 
