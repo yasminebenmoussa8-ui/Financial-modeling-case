@@ -3,6 +3,8 @@
 This project consists of a fully integrated three-statement financial model developed in Microsoft Excel to forecast Blu Containers' financial performance over a five-year horizon (2023–2027).
 
 The model links the Income Statement, Balance Sheet, Cash Flow Statement, and supporting schedules through dynamic formulas and incorporates scenario analysis, debt modelling, and liquidity forecasting to evaluate the impact of different operating assumptions on financial performance.
+
+The model was built following financial modelling best practices, with fully linked schedules, dynamic assumptions, and automated outputs to support financial planning and scenario analysis.
 ## Model Features
 
 - Fully integrated Income Statement, Balance Sheet and Cash Flow Statement
@@ -16,8 +18,14 @@ The model links the Income Statement, Balance Sheet, Cash Flow Statement, and su
 
 ## Project Architecture
 ### 1. Assumptions & Scenario Controls
-This section establishes the operational core and macroeconomic drivers of the model. It features a centralized scenario switch that dynamically alternates variables across three cases: **Base Case** (Research Forecast), **Best Case** (+4% Pricing / High Growth), and **Worst Case** (-4% Pricing / High Inflation). 
+Key modelling assumptions include:
 
+• Dynamic pricing and sales volume assumptions
+• Production capacity constraints
+• Variable and fixed operating cost inflation
+• Scenario-specific macroeconomic assumptions
+
+**Base Case** (Research Forecast), **Best Case** (+4% Pricing / High Growth), and **Worst Case** (-4% Pricing / High Inflation). 
 * Volume Constraints: Sales volume growth is modeled at 5.0% for 2023 and 4.0% thereafter. Crucially, the model incorporates an absolute production capacity wall at **420,000 units/year**, which forces unconstrained growth to cap out and hit 100% capacity utilization by 2027 under the Base Case.
 * Cost Structures: Variable inputs (Raw Materials at $226/unit and Utilities at $66.2/unit) and fixed overheads ($69.0M total in 2023) scale annually based on scenario-specific inflation rates.
 
