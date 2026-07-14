@@ -60,7 +60,9 @@ The model projects working capital, fixed assets, debt balances, deferred taxes,
 
 
 ### 4. Net Income Performance
+The Net Income analysis illustrates how different operating environments affect shareholders' profitability over the forecast horizon.
 
+The comparison highlights the impact of pricing assumptions, inflation, financing costs, and operating leverage on the company's earnings generation across all scenarios.
 * **Scenario Divergence:** The chart illustrates the massive impact of operating leverage. In the Worst Case, persistent inflation and a 14% margin drop crush Net Income to $5M by 2027, whereas the Best Case captures the full upside of higher pricing with no added interest burdens.
 
 ![Net Income Scenario Comparison](images/Net_income.png)
